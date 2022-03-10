@@ -3,7 +3,7 @@
 
 <img src="https://d3uir0eo9qeeuq.cloudfront.net/blog/wp-content/uploads/2017/01/19122144/bitcoin-768x461.jpg" alt="drawing" width="600"/>
 
-### Introduccion
+### INTRODUCCIÓN
 
 Vamos a realizar un estudio de cómo la divisa que está en boca de todos a día de hoy, se ha convertido en aquella moneda que se ha multiplicado por 70.000 veces su valor desbancando las ya cotidianas y aburridas divisas reguladas.
 
@@ -79,3 +79,4 @@ Utilizaremos **returns.corr()** para comprobar qué tipo de correlación encontr
 Nuestra hipótesis fundamental es realmente preguntarnos cómo es posible que haya tanta volatilidad en el mercado de las criptomonedas cuando el volumen en los últimos 5 años se ha disparado y aumentado casi un 1000%. Aún así vemos caídas notables,  todas precedidas por factores fundamentales que hacen que el mercado de las Criptos estén también relacionadas por el entorno macro y por las diferentes economías políticas.
 
 
+<img src="https://i.pinimg.com/originals/d5/18/05/d51805b6101cbae3dbcdea213caf5c3d.jpg" alt="drawing" width="600"/>
