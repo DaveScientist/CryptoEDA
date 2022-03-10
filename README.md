@@ -5,7 +5,7 @@
 
 ### INTRODUCCIÓN
 
-Vamos a realizar un estudio de cómo la divisa que está en boca de todos a día de hoy, se ha convertido en aquella moneda que se ha multiplicado por 70.000 veces su valor desbancando las ya cotidianas y aburridas divisas reguladas.
+Vamos a realizar un estudio de cómo la divisa que está en boca de todos a día de hoy, se ha convertido en aquella moneda que se ha multiplicado por 70 veces su valor desbancando las ya cotidianas y aburridas divisas reguladas.
 
 En dicho estudio, además, contaremos con una Start-Up ficticia, Kapital & Markets donde analizaremos las ventajas y desventajas de que ésta y otras divisas estén en un mercado descentralizado y no regulado. Hallaremos un plan que no conoce todo el mundo para saber cómo sacar rentabilidad 100% fiable y sin trucos.
 
