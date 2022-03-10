@@ -1,1 +1,85 @@
 # CryptoEDA
+## EDA_Kapital&Markets_Cryptos
+
+<img src="https://d3uir0eo9qeeuq.cloudfront.net/blog/wp-content/uploads/2017/01/19122144/bitcoin-768x461.jpg" alt="drawing" width="600"/>
+
+### Introduccion
+
+Vamos a realizar un estudio de cómo la divisa que está en boca de todos a día de hoy, se ha convertido en aquella moneda que se ha multiplicado por 70.000 veces su valor desbancando las ya cotidianas y aburridas divisas reguladas.
+
+En dicho estudio, además, contaremos con una Start-Up ficticia, Kapital & Markets donde analizaremos las ventajas y desventajas de que ésta y otras divisas estén en un mercado descentralizado y no regulado. Hallaremos un plan que no conoce todo el mundo para saber cómo sacar rentabilidad 100% fiable y sin trucos.
+
+Hablaremos de minería de datos y de cómo es posible que con un buen equipo informático y buenos procesadores,tarjetas gráficas, etc... la gente pueda obtener "porciones" de éstas divisas virtuales.
+
+Comprobaremos cómo se han comportado las principales divisas a lo largo de estos últimos 10 años, viendo un modus operandi en la mayoría de ellas y realizaremos un análisis técnico para darnos cuenta de que finalmente y en diferente proporción, acaban teniendo un apartado gráfico parecido.
+
+Estudiaremos a través de este análisis gráfico, mencionado antes, un indicador fundamental para comprobar los comportamientos al alza y a la baja que sufre una moneda. Lo llamaremos Media Móvil y veremos para qué sirve.
+
+Comentaremos qué son las ICO (Initial Coin Offering) y aquí precisamente es cuando entra en escena nuestra querida empresa llamada Kapital & Markets que nos va a hacer ganar mucho dinero con su maravilloso asesoramiento y ventajas de ser un cliente suyo.
+
+El notebook es el fichero principal del proyecto. En él, hacemos algunas de las transformaciones menores. El resto de las transformaciones y la realización de los gráficos las vamos guardando en diferentes ficheros (.py).
+
+
+### ÍNDICE
+1. [DECLARACIÓN DE LIBRERÍAS](#DECLARACION_DE_LIBRERIAS)
+2. [LECTURA DEL FICHERO](#LECTURA_DEL_FICHERO)
+3. [LIMPIEZA DE LA INFORMACIÓN](#LIMPIEZA_DE_LA_INFORMACION)
+4. [ATLETAS POR EDICIÓN](#ATLETAS_POR_EDICION)
+5. [DELEGACIONES POR EDICIÓN](#DELEGACIONES_POR_EDICION)
+6. [FILTRO DE ATLETAS](#FILTRO_DE_ATLETAS)
+7. [AÑOS DE ESTUDIO, DICCIONARIO DE COLORES Y DEPORTES ESTUDIADOS](#PREPARACION_DE_ESTUDIO)
+8. [CUALIDADES FÍSICAS EN ATLETISMO MASCULINO](#FISICO_M)
+9. [CUALIDADES FÍSICAS EN ATLETISMO FEMENINO](#FISICO_F)
+10. [OBTENCIÓN DE INFORMACIÓN DE LA PRUEBA DE 100 METROS LISOS MEDIANTE WEB SCRAPING](#WEB_SCRAPING)
+11. [LIMPIEZA DE LOS DATOS DE LOS 100 METROS LISOS](#LIMPIEZA_100M)
+12. [REPRESENTACIÓN DE LOS DATOS DE LOS 100 METROS LISOS](#GRAFICO_100M)
+
+
+
+### 1. DECLARACIÓN DE LIBRERíAS <a id='DECLARACION_DE_LIBRERIAS'></a>
+
+Declaración de todas las librerías que se han utilizado para limpiar los datos y dibujar los gráficos que nos han ayudado a la realización del estudio, además de importar las funciones que hemos creado y los datos de los que hemos hablado anteriormente.
+
+
+### 2. LECTURA DEL FICHERO <a id='LECTURA_DEL_FICHERO'></a>
+
+Abrimos el notebook principal **PROYECTO_EDA_CRIPTOS.ipynb** en el que se encuentra todo nuestro código desde donde vamos a llamar a las distintas funciones y librerías que hemos utilizado.
+
+
+
+### 3. CRIPTOMONEDAS PRINCIPALES <a id='CRIPTOMONEDAS_PRINCIPALES'></a>
+
+Dibujo de los gráficos de las criptomonedas que vamos a comparar y visualizar a través de la librería matplotlib.
+
+Introduciremos la función **obtener_velas** y **obtener_velas_inicio** para poder comprobar cada uno de los gráficos en ticks de 1 día en diferentes gráficas.
+
+
+### 4. FILTRO DE CRIPTOMONEDAS <a id='FILTRO_DE_CRIPTOMONEDAS'></a>
+
+Filtraremos nuestras criptomonedas a través de la siguiente variable: **cryptocurrencies = ['BNB-USD','BTC-USD', 'ETH-USD', 'ADA-USD']** y a continuación filtraremos la fecha de inicio y final para comprobar rangos de fecha distintos para realizar un análisis técnico de cada criptomoneda **data = yf.download(cryptocurrencies, start='2020-01-01',end='2022-03-01') data.info()**. 
+
+
+### 5. HISTOGRAMAS DE CRIPTOMONEDAS PRINCIPALES <a id='HISTOGRAMAS_DE_CRIPTOMONEDAS_PRINCIPALES'></a>
+
+Una vez filtradas las criptomonedas que deseamos visualizar, las introduciremos en los histogramas a través de **Plotly**.
+
+Las llamaremos con el siguiente formato, por ejemplo: **axs[0,0].hist(returns['BTC-USD'], bins=50, range=(-0.2, 0.2))**
+
+
+### 6. DATOS EN PANDAS <a id='DATOS_EN_PANDAS'></a>
+
+Con todos los datos preparados para tratar, en este apartado se realizan los gráficos comparativos de los datos del volumen, precio inicial, precio al cierre y máximo y mínimo precio del día. 
+
+
+### 7. COMPROBACIÓN DE CORRELACIONES <a id='COMPROBACION_DE_CORRELACIONES'></a>
+
+En este apartado se realizan los estudios de correlación de las principales criptomonedas que hemos elegido.
+
+Utilizaremos **returns.corr()** para comprobar qué tipo de correlación encontramos.
+
+
+### 8. OBTENCIÓN DE INFORMACIÓN Y PLANTEAREMOS LA HIPÓTESIS FINAL CON SU CONCLUSIÓN <a id='OBTENCIÓN_DE_INFORMACIÓN_Y_PLANTEAREMOS_LA_HIPÓTESIS_FINAL_CON_SU_CONCLUSIÓN'></a>
+
+Nuestra hipótesis fundamental es realmente preguntarnos cómo es posible que haya tanta volatilidad en el mercado de las criptomonedas cuando el volumen en los últimos 5 años se ha disparado y aumentado casi un 1000%. Aún así vemos caídas notables,  todas precedidas por factores fundamentales que hacen que el mercado de las Criptos estén también relacionadas por el entorno macro y por las diferentes economías políticas.
+
+
