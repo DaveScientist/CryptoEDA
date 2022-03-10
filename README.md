@@ -13,6 +13,13 @@ Hablaremos de minería de datos y de cómo es posible que con un buen equipo inf
 
 Comprobaremos cómo se han comportado las principales divisas a lo largo de estos últimos 10 años, viendo un modus operandi en la mayoría de ellas y realizaremos un análisis técnico para darnos cuenta de que finalmente y en diferente proporción, acaban teniendo un apartado gráfico parecido.
 
+Las Criptomonedas principales que vamos a estudiar son: 
+
+**- Bitcoin**
+**- Cardano**
+**- Ethereum**
+**- BNB**
+
 Estudiaremos a través de este análisis gráfico, mencionado antes, un indicador fundamental para comprobar los comportamientos al alza y a la baja que sufre una moneda. Lo llamaremos Media Móvil y veremos para qué sirve.
 
 Comentaremos qué son las ICO (Initial Coin Offering) y aquí precisamente es cuando entra en escena nuestra querida empresa llamada Kapital & Markets que nos va a hacer ganar mucho dinero con su maravilloso asesoramiento y ventajas de ser un cliente suyo.
@@ -28,13 +35,24 @@ El notebook es el fichero principal del proyecto. En él, hacemos algunas de las
 5. [HISTOGRAMAS DE CRIPTOMONEDAS PRINCIPALES](#HISTOGRAMAS_DE_CRIPTOMONEDAS_PRINCIPALES)
 6. [DATOS EN PANDAS](#DATOS_EN_PANDAS)
 7. [COMPROBACIÓN DE CORRELACIONES](#COMPROBACIÓN_DE_CORRELACIONES)
-8. [OBTENCIÓN DE INFORMACIÓN E HIPÓTESIS FINAL CON SU CONCLUSIÓN](#OBTENCIÓN_DE_INFORMACIÓN_E_HIPÓTESIS_FINAL_CON_SU_CONCLUSIÓN)
+8. [MEDIAS MÓVILES](#MEDIAS_MÓVILES)
+9. [ICO (INITIAL COIN OFFERING)](#ICO_INITIAL_COIN_OFFERING)
+10. [OBTENCIÓN DE INFORMACIÓN E HIPÓTESIS FINAL CON SU CONCLUSIÓN](#OBTENCIÓN_DE_INFORMACIÓN_E_HIPÓTESIS_FINAL_CON_SU_CONCLUSIÓN)
 
 
 
 ### 1. DECLARACIÓN DE LIBRERíAS <a id='DECLARACION_DE_LIBRERIAS'></a>
 
 Declaración de todas las librerías que se han utilizado para limpiar los datos y dibujar los gráficos que nos han ayudado a la realización del estudio, además de importar las funciones que hemos creado y los datos de los que hemos hablado anteriormente.
+
+Tendremos que importar y hacer un **!pip install** de las siguientes librerías:
+
+**- pandas**
+**- requests**
+**- csv**
+**- matplotlib.pyplot**
+**- yfinance**
+**- investpy**
 
 
 ### 2. LECTURA DEL FICHERO <a id='LECTURA_DEL_FICHERO'></a>
@@ -74,7 +92,32 @@ En este apartado se realizan los estudios de correlación de las principales cri
 Utilizaremos **returns.corr()** para comprobar qué tipo de correlación encontramos.
 
 
-### 8. OBTENCIÓN DE INFORMACIÓN E HIPÓTESIS FINAL CON SU CONCLUSIÓN <a id='OBTENCIÓN_DE_INFORMACIÓN_E_HIPÓTESIS_FINAL_CON_SU_CONCLUSIÓN'></a>
+### 8. MEDIAS MÓVILES <a id='MEDIAS_MÓVILES'></a>
+
+Comprobaremos con un indicador de análisis técnico que personalmente me gusta bastante y se puede configurar con diferentes variables que serían los días de la media móvil que se quiera implementar en el gráfico.
+
+Llamaríamos a la media móvil de 50 días en el notebook de la siguiente manera: 
+
+**MA50 = adj_close.rolling(50).mean()**
+
+**axs[0,1].plot(adj_close['BTC-USD'], label= 'closing')**
+**axs[0,1].plot(MA50['BTC-USD'], label= 'MA50')**
+**axs[0,1].set_title('BTC')**
+**axs[0,1].legend()**
+
+
+### 9. ICO (INITIAL COIN OFFERING) <a id='ICO_INITIAL_COIN_OFFERING'></a>
+
+Aquí expondremos como podremos obtener rentabilidad con criptomonedas poco comunes y comprobaremos en un análisis técnico exhaustivo que todas las criptos, en el momento de su salida en la fase de la ICO a través de Tokens, se pueden alcanzar rentabilidades por encima del 500% en muchos casos.
+
+Pondremos ejemplos de las siguientes Criptomonedas:
+
+**- AVA**
+**- GALA**
+
+
+
+### 10. OBTENCIÓN DE INFORMACIÓN E HIPÓTESIS FINAL CON SU CONCLUSIÓN <a id='OBTENCIÓN_DE_INFORMACIÓN_E_HIPÓTESIS_FINAL_CON_SU_CONCLUSIÓN'></a>
 
 Nuestra hipótesis fundamental es realmente preguntarnos cómo es posible que haya tanta volatilidad en el mercado de las criptomonedas cuando el volumen en los últimos 5 años se ha disparado y aumentado casi un 1000%. Aún así vemos caídas notables,  todas precedidas por factores fundamentales que hacen que el mercado de las Criptos estén también relacionadas por el entorno macro y por las diferentes economías políticas.
 
