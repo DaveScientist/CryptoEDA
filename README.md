@@ -22,7 +22,7 @@ Las Criptomonedas principales que vamos a estudiar son:
 
 Estudiaremos a través de este análisis gráfico, mencionado antes, un indicador fundamental para comprobar los comportamientos al alza y a la baja que sufre una moneda. Lo llamaremos Media Móvil y veremos para qué sirve.
 
-Comentaremos qué son las ICO (Initial Coin Offering) y aquí precisamente es cuando entra en escena nuestra querida empresa llamada Kapital & Markets que nos va a hacer ganar mucho dinero con su maravilloso asesoramiento y ventajas de ser un cliente suyo.
+Comentaremos qué son las ICO (Initial Coin Offering) y aquí precisamente es cuando entra en escena nuestra empresa llamada Kapital & Markets que nos va a hacer ganar mucho dinero con su maravilloso asesoramiento y ventajas de ser un cliente suyo.
 
 El notebook es el fichero principal del proyecto. En él, hacemos algunas de las transformaciones menores. El resto de las transformaciones y la realización de los gráficos las vamos guardando en diferentes ficheros (.py).
 
